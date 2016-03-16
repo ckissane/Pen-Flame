@@ -56,7 +56,7 @@ function tick() {
         for (var i = 0; i < 2; i++) {
             for (var y = -1; y <= 1; y++) {
                 for (var x = -1; x <= 1; x++) {
-                    nodes.push(new node(Math.max(Math.min(h - 1, Math.floor(mouse.x + x)), 0), Math.max(Math.min(w - 1, Math.floor(mouse.y + y)), 0)));
+                    nodes.push(new node(Math.max(Math.min(w - 1, Math.floor(mouse.x + x)), 0), Math.max(Math.min(h - 1, Math.floor(mouse.y + y)), 0)));
                 }
             }
         }
