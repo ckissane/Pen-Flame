@@ -143,6 +143,32 @@ document.body.onmousemove = function(event) {
         y: event.clientY
     };
 };
+document.body.ontouchstart = function(event) {
+    event.clientX=event.changedTouches[0].pageX;
+    event.clientY=event.changedTouches[0].pageY;
+    mouse = {
+        x: event.clientX,
+        y: event.clientY
+    };
+    pressed = true;
+};
+document.body.ontouchend = function(event) {
+    event.clientX=event.changedTouches[0].pageX;
+    event.clientY=event.changedTouches[0].pageY;
+    mouse = {
+        x: event.clientX,
+        y: event.clientY
+    };
+    pressed = false;
+};
+document.body.ontouchmove = function(event) {
+    event.clientX=event.changedTouches[0].pageX;
+    event.clientY=event.changedTouches[0].pageY;
+    mouse = {
+        x: event.clientX,
+        y: event.clientY
+    };
+};
 //window.setInterval(tick, 1);
 //window.setInterval(draw, 10);
 function frame() {
