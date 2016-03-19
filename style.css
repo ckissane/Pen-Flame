@@ -12,8 +12,8 @@ canvas {
     top:0;
     left:0;
     background:black;
-    filter: blur(5px);
-    -webkit-filter:blur(5px);
+    filter: blur(10px);
+    -webkit-filter:blur(10px);
 }
 .instruct {
     position:absolute;
