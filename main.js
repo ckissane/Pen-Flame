@@ -162,6 +162,7 @@ document.body.ontouchend = function(event) {
     pressed = false;
 };
 document.body.ontouchmove = function(event) {
+    event.preventDefault();
     event.clientX=event.changedTouches[0].pageX;
     event.clientY=event.changedTouches[0].pageY;
     mouse = {
