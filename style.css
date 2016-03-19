@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Flavors);
  body, html {
+  position: fixed;
     background: black;
     margin:0;
     padding:0px;
